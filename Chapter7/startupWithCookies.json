@@ -1,0 +1,92 @@
+[
+  {
+    "description":"return cookies !",
+    "request":{
+      "uri":"/getCookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"cookies success !"
+    }
+  },
+  {
+    "description":" request with cookies 1",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"Request with cookies !"
+    }
+  },
+  {
+    "description":" post request with cookies 1",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"huhansan",
+        "age":"20"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "huhansan":"success",
+        "status":"1"
+      }
+    }
+  },
+  {
+    "description":"headers",
+    "request":{
+      "uri":"/post/with/headers",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"huhansan",
+        "age":"20"
+      }
+    },
+    "response":{
+      "json":{
+        "huhansan":"successful",
+        "status":"1"
+      }
+    }
+  },
+  {
+    "description":"redirect",
+    "request":{
+      "uri":"/redirect/topath"
+    },
+    "redirectTo":"/redirect/new"
+  },
+  {
+    "description":"redirect",
+    "request":{
+      "uri":"/redirect/new"
+    },
+    "response":{
+      "text":"redirect successful !"
+    }
+  },
+  {
+    "description":"redirect",
+    "request":{
+      "uri":"/redirect"
+    },
+    "redirectTo":"https://www.baidu.com"
+  }
+]

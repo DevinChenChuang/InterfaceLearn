@@ -1,0 +1,26 @@
+[
+  {
+    "description":"First get request !",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"First get request no queries !"
+    }
+  },
+  {
+    "description":"Second get request !",
+    "request":{
+      "uri":"/getwithparam",
+      "method":"get",
+      "queries":{
+        "name":"huhansan",
+        "age":"20"
+      }
+    },
+    "response":{
+      "text":"huan han san come back !"
+    }
+  }
+]

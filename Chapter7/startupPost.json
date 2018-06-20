@@ -1,0 +1,26 @@
+[
+  {
+    "description":"First post request !",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"First post request !"
+    }
+  },
+  {
+    "description":"Second post request !",
+    "request":{
+      "uri":"/postwithparam",
+      "method":"post",
+      "forms":{
+        "name":"huhansan",
+        "age":"44"
+      }
+    },
+    "response":{
+      "text":"Second post request with parameter !"
+    }
+  }
+]
